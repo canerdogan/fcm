@@ -55,6 +55,11 @@ class FcmNotification
     protected $bodyLocKey;
 
     /**
+     * @var string
+     */
+    protected $image;
+
+    /**
      * @var array
      */
     protected $bodyLocArgs;
@@ -289,6 +294,27 @@ class FcmNotification
     /**
      * @return string
      */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * [Optional] The notification's image, URL will be fine.
+     *
+     * @param string $image
+     * @return $this
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
     public function getBodyLocKey()
     {
         return $this->bodyLocKey;
@@ -387,6 +413,7 @@ class FcmNotification
             'sound'              => $this->sound,
             'tag'                => $this->tag,
             'color'              => $this->color,
+            'image'              => $this->image,
             'body_loc_key'       => $this->bodyLocKey,
             'body_loc_args'      => $this->bodyLocArgs,
             'title_loc_key'      => $this->titleLocKey,

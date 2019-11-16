@@ -1,13 +1,19 @@
 {
-    "name": "coreproc/laravel-notification-channel-fcm",
+    "name": "canerdogan/laravel-notification-channel-fcm",
     "description": "FCM (Firebase Cloud Messaging) Notifications Driver for Laravel",
-    "homepage": "https://github.com/CoreProc/fcm",
+    "homepage": "https://github.com/canerdogan/fcm",
     "license": "MIT",
     "authors": [
         {
             "name": "Chris Bautista",
             "email": "chrisbjr@gmail.com",
             "homepage": "https://www.coreproc.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Can Erdogan",
+            "email": "can@canerdogan.net",
+            "homepage": "https://canerdogan.net",
             "role": "Developer"
         }
     ],
